@@ -9,20 +9,17 @@ class Solution {
                 if (stack.isEmpty()){
                     return false;
                 }
-           
-                
-            char topChar = stack.pop();
+            
+                char topChar = stack.pop();
 
-            if((c == ')' && topChar != '(') ||
-               (c == '}' && topChar != '{') ||
-               (c == ']' && topChar != '[')) {
-                return false;
-            }
-              
+                if((c == ')' && topChar != '(') ||
+                (c == '}' && topChar != '{') ||
+                (c == ']' && topChar != '[')) {
+                    return false;
+                } 
             }
 
         }
-
         return stack.isEmpty();
     }
 }
