@@ -14,7 +14,6 @@ class Solution {
             return pivotIndex;
         }
 
-       
         if(target >= nums[0]){
             return binarySearch(nums, target, 0, pivotIndex-1);
         }
